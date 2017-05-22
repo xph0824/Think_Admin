@@ -1,0 +1,12 @@
+<include file="Public:header"  title="ThinkPHP通用后台"/>
+	<h3>欢迎使用ThinkPHP通用后台</h3>
+	<p>列表页: <a href="{:U('Post/index',array('name'=>'cnsecer'))}">{:U('Post/index',array('name'=>'cnsecer'))}</a> </p>
+	<p>详情页: <a href="{:U('Post/view',array('id'=>1))}">{:U('Post/view',array('id'=>1))}</a> </p>
+	<p>单页: <a href="{:U('Page/index',array('name'=>'cnsecer'))}">{:U('Page/index',array('name'=>'cnsecer'))}</a> </p>
+	<p>登录页: <a href="{:U('login/login')}">{:U('login/login')}</a></p>
+	<p>QQ登录: <a href="{:U('login/login',array('type'=>'qq'))}">{:U('login/login',array('type'=>'qq'))}</a></p>
+	<hr>
+	<p>后台地址: <a href="admin.php">admin.php</a></p>
+	<p>账号:admin</p>
+	<p>密码:admin</p>
+<include file="Public:footer"/>

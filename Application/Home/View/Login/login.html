@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登陆</title>
+</head>
+<body>
+<?php if ($_SESSION['userid'] == null): ?>
+	
+	<form action="{:U('login/login')}" method="post">
+		<input type="text" name="username"><br>
+		<input type="text" name="password"><br>
+		<input type="submit" value="登陆"><br>
+	</form>
+<?php else: ?>
+	<p>Welcome,<?php echo $_SESSION['username'] ?>  |  <a href="{:U('login/logout')}">退出登陆</a></p>
+<?php endif ?>
+</body>
+</html>
